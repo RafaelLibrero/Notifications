@@ -43,5 +43,18 @@
             android:layout_height="wrap_content"
             android:text="Guardar recordatorio" />
 
+        <Button
+            android:id="@+id/btnStartService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Servicio" />
+
+        <Button
+            android:id="@+id/btnStopService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detener Servicio" />
+
+
     </LinearLayout>
 </ScrollView>

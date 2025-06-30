@@ -32,6 +32,18 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        binding.btnStartService.setOnClickListener {
+            val intent = Intent(this, MyForegroundService::class.java)
+            startForegroundService(intent)
+        }
+
+
+        binding.btnStopService.setOnClickListener {
+            val intent = Intent(this, MyForegroundService::class.java)
+            stopService(intent)
+        }
+
+
         createNotificationChannel()
 
         binding.btnSetReminder.setOnClickListener {
